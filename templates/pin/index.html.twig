@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Painterest{% endblock %}
+
+{% block body %}
+<h1> {{pluralize(1,"pin","pins")}} </h1>
+{% for pin in pins %}
+<article>
+<h2>pin.titre</h2>
+<p>pin.description</p>
+</article
+{% endfor %}
+
+{% endblock %}
